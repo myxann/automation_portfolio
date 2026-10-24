@@ -1,1 +1,1 @@
-
+Beyond the Workflow is my personal CV and automation portfolio, showcasing my projects, technical skills, and interests in software development, workflow automation, and systems integration through an artistic, Renaissance-inspired design.
