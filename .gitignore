@@ -5,4 +5,13 @@ dist
 .env.*
 !.env.example
 .vercel
-README.md
+*.zip
+*.tsbuildinfo
+*.local
+private/
+.qa/
+output/
+*.pdf
+*.docx
+*.pem
+*.key

@@ -1,0 +1,178 @@
+/* Mounted beside the website, never beneath its hidden print ancestor. */
+.print-resume {
+  display: none;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0.7in;
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    overflow: visible !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  .website-screen {
+    display: none !important;
+  }
+  .print-resume {
+    display: block !important;
+    position: static;
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    font:
+      400 11pt/1.18 "Times New Roman",
+      Times,
+      serif;
+    letter-spacing: normal;
+    text-align: left;
+    -webkit-font-smoothing: auto;
+    text-rendering: auto;
+  }
+  .print-resume *,
+  .print-resume *::before,
+  .print-resume *::after {
+    box-sizing: border-box;
+    color: #000;
+    background: transparent;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    letter-spacing: normal;
+  }
+  .print-resume h1,
+  .print-resume h2,
+  .print-resume h3,
+  .print-resume p,
+  .print-resume ul {
+    margin: 0;
+    padding: 0;
+  }
+  .print-resume a {
+    color: #000;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+  .resume-header {
+    text-align: center;
+    margin-bottom: 9pt;
+  }
+  .print-resume .resume-name {
+    font:
+      700 17pt/1.1 "Times New Roman",
+      Times,
+      serif;
+    text-transform: uppercase;
+    margin-bottom: 5pt;
+  }
+  .resume-contacts {
+    line-height: 1.2;
+  }
+  .resume-contact-item {
+    display: inline;
+    overflow-wrap: anywhere;
+  }
+  .resume-contact-item + .resume-contact-item::before {
+    content: " | ";
+    white-space: pre;
+  }
+  .resume-section {
+    margin-top: 8pt;
+    padding: 0;
+    scroll-margin: 0;
+  }
+  .print-resume .resume-section-title {
+    font:
+      700 11pt/1.15 "Times New Roman",
+      Times,
+      serif;
+    text-transform: uppercase;
+    border-bottom: 0.5pt solid #000;
+    padding-bottom: 2pt;
+    margin-bottom: 5pt;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  .resume-entry {
+    margin-bottom: 6pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .resume-entry:last-child {
+    margin-bottom: 0;
+  }
+  .resume-entry-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10pt;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  .print-resume h3 {
+    font:
+      700 11pt/1.18 "Times New Roman",
+      Times,
+      serif;
+  }
+  .resume-date {
+    flex: 0 0 auto;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .resume-education-entry p {
+    margin-top: 1pt;
+  }
+  .print-resume .resume-skills {
+    list-style: none;
+  }
+  .resume-skills li {
+    margin-bottom: 2pt;
+  }
+  .print-resume strong {
+    font-weight: 700;
+  }
+  .resume-technologies,
+  .resume-experience-kind {
+    font-style: italic;
+    margin-top: 1pt !important;
+  }
+  .print-resume .resume-bullets {
+    list-style: disc;
+    padding-left: 14pt;
+    margin-top: 2pt;
+  }
+  .resume-bullets li {
+    padding-left: 1pt;
+  }
+  .print-resume li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    orphans: 2;
+    widows: 2;
+  }
+  .print-resume p {
+    orphans: 2;
+    widows: 2;
+  }
+}

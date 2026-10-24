@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/fonts/cormorant-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/fonts/cormorant-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("/fonts/inter-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/ibm-plex-mono.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  --duchess-green: #42733d;
+  --dark-violet: #1b102e;
+  --lavender: #a79cde;
+  --antique-gold: #d4af6b;
+  --burnt-orange: #cf6b3e;
+  --ivory: #f4f1e9;
+  --canvas: #100d16;
+  --panel: #19161e;
+  --green-panel: #1b2e22;
+  --text: #f4f1e9;
+  --muted: #b6b2b9;
+  --rule: #ffffff21;
+  --gold-rule: #d4af6b55;
+  --display: "Cormorant Garamond", Georgia, serif;
+  --body: Inter, system-ui, sans-serif;
+  --mono: "IBM Plex Mono", monospace;
+  --gutter: clamp(24px, 5.5vw, 88px);
+  --section-space: clamp(76px, 8vw, 128px);
+}
